@@ -1,0 +1,35 @@
+{
+  "name": "flamingo-mascot",
+  "version": "1.0.0",
+  "description": "Mascotte fenicottero rosa di Azure Meetup Casteddu: animazione always-on-top reattiva agli eventi GitHub (commit/push/merge).",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "simulate": "node scripts/simulate.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "electron",
+    "mascot",
+    "github",
+    "webhook",
+    "azure-meetup-casteddu"
+  ],
+  "author": "Azure Meetup Casteddu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ]
+  }
+}

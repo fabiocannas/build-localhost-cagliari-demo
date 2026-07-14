@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+    <title>Fenicottero Mascot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="stage">
+      <div id="mascot" class="idle">
+        <!-- Fenicottero rosa in SVG -->
+        <svg viewBox="0 0 200 240" width="180" height="216" aria-label="fenicottero rosa">
+          <!-- gambe -->
+          <line x1="92" y1="170" x2="88" y2="225" stroke="#e8a0b0" stroke-width="5" stroke-linecap="round" />
+          <line x1="108" y1="170" x2="112" y2="225" stroke="#e8a0b0" stroke-width="5" stroke-linecap="round" />
+          <!-- corpo -->
+          <ellipse cx="100" cy="150" rx="42" ry="34" fill="#ff7eb6" />
+          <!-- ala -->
+          <path id="wing" d="M100 130 q35 5 48 32 q-28 6 -50 -8 z" fill="#ff5fa2" />
+          <!-- collo a S -->
+          <path d="M104 122 q26 -18 8 -46 q-20 -28 6 -52"
+                fill="none" stroke="#ff7eb6" stroke-width="14" stroke-linecap="round" />
+          <!-- testa -->
+          <circle cx="120" cy="30" r="16" fill="#ff7eb6" />
+          <!-- occhio -->
+          <circle cx="126" cy="26" r="3.2" fill="#3a2a33" />
+          <!-- becco -->
+          <path d="M134 30 l22 8 l-20 8 z" fill="#2b2b2b" />
+        </svg>
+      </div>
+      <div id="fx"></div>
+      <div id="label"></div>
+    </div>
+    <script src="animation-states.js"></script>
+    <script src="mascot.js"></script>
+  </body>
+</html>
